@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Prenchimento de formulario</h1>
+    <form action="DadosPessoas.php">
+    <fieldset>
+        <legend>Sua informações</legend>
+        <table cellspacing="8">
+            <tr>
+                <td>
+                    <label for="nome">Nome:</label>
+                </td>
+                    <td align="left">
+                    <input type="text" name="nome" placeholder="Digite seu Nome">
+                    </td>
+                    <td>
+                        <label for="Regiao">Região</label>
+                    <td align="left">
+                            <select name="regiao">
+                            <option value="N">Norte</option>
+                            <option value="NE">Nordeste</option>
+                            <option value="CO">Centro-Oeste</option>
+                            <option value="SE">Sudeste</option>
+                            <option value="S">Sul</option>
+                        </select>
+                    </td>
+                <td>
+                <label for="senha">Senha:</label>
+                </td>   
+                <td align="left">
+                <input type="password" name="senha" placeholder="Digite sua Senha">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar Formulario">
+    </form>
+</body>
+</html>
